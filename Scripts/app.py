@@ -42,15 +42,19 @@ if selected_column:
         st.plotly_chart(fig)
     else:
         st.write("Value Counts:")
-        st.write(df[selected_column].value_counts())
+        value_counts = df[selected_column].value_counts().reset_index()
+        value_counts.columns = [selected_column, 'count']  # Rename columns for clarity
+
+        st.write(value_counts)
         fig = px.bar(
-            df[selected_column].value_counts().reset_index(),
-            x="index",
-            y=selected_column,
-            labels={"index": selected_column, selected_column: "Count"},
+            value_counts,
+            x=selected_column,
+            y='count',
+            labels={selected_column: selected_column, 'count': 'Count'},
             title=f"Value Counts for {selected_column}",
         )
-        st.plotly_chart(fig)
+    st.plotly_chart(fig)
+
 
 # Relationship Analysis
 st.sidebar.header("Column Relationship Analysis")
