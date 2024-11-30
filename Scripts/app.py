@@ -236,7 +236,7 @@ with tab4:
                 df,
                 x="Y",
                 y=analysis_col,
-                title=f"Box Plot: `{analysis_col}` vs Y",
+                title=f"Scatter Plot: `{analysis_col}` vs Y",
                 labels={"Y": "Program Completion (Y)", analysis_col: analysis_col},
                 template="plotly_white",
             )
@@ -255,6 +255,7 @@ with tab4:
                 y="Count",
                 color="Y",
                 barmode="stack",
+                title=f"Box Plot: `{analysis_col}` vs Y",
                 labels={"Count": "Count", analysis_col: analysis_col, "Y": "Completion Status (Y)"},
                 template="plotly_white",
             )
