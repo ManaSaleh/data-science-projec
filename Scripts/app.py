@@ -255,7 +255,6 @@ with tab4:
                 y="Count",
                 color="Y",
                 barmode="stack",
-                title=f"Stacked Bar Chart: `{analysis_col}` by Y",
                 labels={"Count": "Count", analysis_col: analysis_col, "Y": "Completion Status (Y)"},
                 template="plotly_white",
             )
