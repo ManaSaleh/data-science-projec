@@ -6,7 +6,7 @@ import plotly.express as px
 # Load the dataset
 @st.cache_data
 def load_data():
-    file_path = "Data/cleaning_data.csv"
+    file_path = "../Data/clening_data.csv"
     data = pd.read_csv(file_path)
     # Drop unnecessary columns if they exist
     data = data.drop(columns=["Unnamed: 0", "Student ID", "Program ID"], errors="ignore")
@@ -236,7 +236,7 @@ with tab4:
                 df,
                 x="Y",
                 y=analysis_col,
-                title=f"Scatter Plot: `{analysis_col}` vs Y",
+                title=f"Box Plot: `{analysis_col}` vs Y",
                 labels={"Y": "Program Completion (Y)", analysis_col: analysis_col},
                 template="plotly_white",
             )
@@ -255,7 +255,7 @@ with tab4:
                 y="Count",
                 color="Y",
                 barmode="stack",
-                title=f"Box Plot: `{analysis_col}` vs Y",
+                title=f"Stacked Bar Chart: `{analysis_col}` by Y",
                 labels={"Count": "Count", analysis_col: analysis_col, "Y": "Completion Status (Y)"},
                 template="plotly_white",
             )

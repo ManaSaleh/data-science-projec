@@ -1,103 +1,102 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RFV0yYdO)
+# 🚀 **Tuwaiq Academy Insights**: Streamlit Dashboard for Registration & Program Analysis
 
-# Data Science Project: Exploratory Data Analysis and Insight Generation
+## 📌 **Project Overview**
+This project explores **Tuwaiq Academy's student registration and program participation data** through a **Streamlit-powered dashboard**. By leveraging **pandas** for data handling and **plotly** for interactive visualizations, we uncover actionable insights into program completion trends, attendance patterns, and student demographics.
 
-## Project Overview
-This project involves selecting a topic, sourcing relevant data (scraping is optional for extra credit), and deriving insights through exploratory data analysis (EDA). The final deliverable will include a presentation highlighting:
-- The idea and its motivation.
-- Data collection process.
-- Data cleaning steps.
-- Insights drawn from the data.
+### 🌟 **Key Features**:
+- **Interactive Dashboard**: Deployed on Streamlit, accessible via any browser.
+- **Visual Insights**: Dynamic charts built with Plotly for real-time exploration.
+- **Streamlined Workflow**: Efficient and reusable code for data preprocessing and analysis.
 
-The goal is to utilize storytelling and visualization techniques to effectively communicate findings. Additional credit is available for deploying a dashboard or report page.
+---
 
-
-
-## Deliverables
-
-### 1. **Presentation**
-- Storytelling format covering:
-  - Project idea and its purpose.
-  - Data collection process.
-  - Data cleaning methods.
-  - Key insights supported by visualizations.
-- Optional: Showcase deployment (e.g., Streamlit, Power BI).
-
-### 2. **Python Notebooks**
-- **Data Collection** (if data is scraped):
-  - Detailed code for scraping or acquiring data.
-  - Explanation of the data source.
-- **Data Cleaning**:
-  - Code and documentation for handling missing values, outliers, and duplicates.
-  - Transformation and feature engineering steps.
-- **Insights**:
-  - Markdown cells describing insights derived from the data.
-  - Visualizations (e.g., matplotlib, seaborn) generated using Python.
-
-### 3. **Deployment (Optional, Extra Credit)**
-- Create an interactive dashboard or report page.
-- Use tools such as Streamlit, Power BI, or other platforms.
-- Make the deployment available online (extra credit).
-
-
-
-## Project Structure (Example)
-The following is an optional example structure that can be used or modified:
-
+## 🗂️ **Project Structure**
 ```
-├── data/
-│   ├── raw/             # Original data files
-│   ├── processed/       # Cleaned and transformed data
-├── notebooks/
-│   ├── 01_data_collection.ipynb  # Data collection (if scraped)
-│   ├── 02_data_cleaning.ipynb    # Data cleaning and preprocessing
-│   ├── 03_insights.ipynb         # Insights and visualizations
-├── deployment/          # Files for deployment (if applicable)
-├── slides/              # Presentation slides (e.g., .pptx or .pdf)
-├── requirements.txt     # Python dependencies
-├── README.md            # Project overview and instructions
+📂 Data/
+   ├── cleaning_data.csv       # Preprocessed dataset
+   ├── registration.csv       # Program registration details
+   └── train.csv              # Dataset with student participation details
+📂 Images/
+   └── status.png             # Program completion pie chart
+📂 NoteBook/
+   ├── cleaning_data.ipynb    # Notebook: Data cleaning
+   └── Insights.ipynb         # Notebook: EDA
+📂 Scripts/
+   └── app.py                 # Streamlit app script
+README.md                     # Project documentation (this file)
+requirements.txt              # Streamlit, pandas, and plotly dependencies
 ```
 
+---
 
+## 🛠️ **Tech Stack**
+- **Streamlit**: Interactive web app framework.
+- **pandas**: Data manipulation and preprocessing.
+- **plotly**: Interactive visualizations.
 
-## Team Members
-- [Team Member 1 Name]
-- [Team Member 2 Name]
-- [Team Member 3 Name]
-- [Team Member 4 Name]
+---
 
-
-
-## Data Source
-- Description of data source(s).
-- Link to data or scraping details (if applicable).
-
-
-
-## Tools and Libraries
-- Python tools: pandas, numpy, matplotlib, seaborn, etc.
-- Deployment tools (optional): Streamlit, Power BI, etc.
-
-
-
-## Usage (Example)
-1. Clone the repository:
+## 🚀 **How to Run**
+1. **Clone the repository**:
    ```bash
-   git clone [repo_url]
+   git clone https://github.com/AI-bootcamp/data-science-project-exploratory-data-analysis-beast-eda.git
+   cd data-science-project-exploratory-data-analysis-beast-eda
    ```
-2. Install required Python libraries:
+
+2. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run notebooks in the specified order:
-   1. `01_data_collection.ipynb`
-   2. `02_data_cleaning.ipynb`
-   3. `03_insights.ipynb`
+
+3. **Launch the Streamlit app**:
+   ```bash
+   streamlit run Scripts/app.py
+   ```
+
+4. **Interact with the dashboard**:
+   - Navigate to the local URL provided in the terminal (e.g., `http://localhost:8501`).
+
+---
+
+## 📊 **Insights at a Glance**
+- **Program Completion Status**:
+  - A **pie chart** shows that **84% of students completed their programs**, while **16% did not**.
+- **Interactive Features**:
+  - Filter by **age**, **gender**, or **region** to explore demographic trends.
+  - Drill down into program-specific insights, including **technology type** and **skill levels**.
+
+![Program Completion Status](Images/status.png)
+
+---
+
+## 🔑 **Key Insights**
+- **Completion Trends**:
+  - Higher completion rates in programs with in-person attendance.
+- **Demographic Patterns**:
+  - Students from certain regions show higher completion rates.
+- **Employment Impact**:
+  - Current employment status correlates with program completion.
 
 
 
-## Notes
-- Emphasize collaboration and version control through GitHub.
-- Use clear and consistent documentation.
-- Optional deployment adds significant value to the project.
-# data-science-projec
+---
+
+## 👥 **Team Members**
+- **Mana Saleh**  
+- **Sarah Alenazi**
+- **Tariq Alshammari**
+- **Najla Alhomaid** 
+
+---
+
+## 🌟 **Next Steps**
+- **Enhance the Dashboard**:
+  - Add additional visualizations and insights for deeper analysis.
+
+---
+
+## 🔗 **Useful Links**
+- **Streamlit App**: [Open Dashboard](https://data-science-projec-3vnukn5k3snbvwsysjkkbi.streamlit.app/)
+- **Presentation**: [View on Prezi](https://prezi.com/view/Ir0sDwMdKsvc6m1R6nJr/)
+
+--- 
