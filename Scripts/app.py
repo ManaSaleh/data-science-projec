@@ -6,7 +6,7 @@ import plotly.express as px
 # Load the dataset
 @st.cache_data
 def load_data():
-    file_path = "../Data/clening_data.csv"
+    file_path = "Data/cleaning_data.csv"
     data = pd.read_csv(file_path)
     # Drop unnecessary columns if they exist
     data = data.drop(columns=["Unnamed: 0", "Student ID", "Program ID"], errors="ignore")
